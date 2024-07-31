@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://abonsama.github.io/result-summary-/)
+- Live Site URL: [live RSC](https://abonsama.github.io/result-summary-/)
 
 ## My process
 the process starts by setting the fonts and the resources to make the website or webpage like the links and the stylesheets.
