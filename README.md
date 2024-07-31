@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://abonsama.github.io/result-summary-/)
 
 ## My process
 the process starts by setting the fonts and the resources to make the website or webpage like the links and the stylesheets.
@@ -55,24 +55,6 @@ i'm really looking up for a strict review here so if any problems or even a spel
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-
+i'm proud of the effort that i made so far.
+i've learned how to fetch data from ".json" files and the data showen are from the file
