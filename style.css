@@ -1,0 +1,179 @@
+:root{
+    /* Primary */
+    --Light-red: hsl(0, 100%, 67%);
+    --Light-red-a: hsla(0, 100%, 67%, .1);
+    --Orangey-yellow:hsl(39, 100%, 56%) ;
+    --Orangey-yellow-a: hsla(39, 100%, 56%, 0.1);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Green-teal-a: hsla(166, 100%, 37%, 0.1);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+    --Cobalt-blue-a: hsla(234, 85%, 45%, 0.1);
+
+/* Gradients */
+
+--Light-slate-blue-background: hsl(252, 100%, 67%);
+--Light-royal-blue-background: hsl(241, 81%, 54%);
+--Violet-blue-circle: hsla(256, 72%, 46%, 1);
+--Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+
+
+/*Neutral */
+
+--White: hsl(0, 0%, 100%);
+--Pale-blue: hsl(221, 100%, 96%);
+--Light-lavender: hsl(241, 100%, 89%);
+--Dark-gray-blue: hsl(224, 30%, 27%);
+
+}
+@font-face {
+    font-family: Hanken Grotesk;
+    src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+/* global rules */
+*{
+    font-size: 18px;
+    font-family: Hanken Grotesk;
+}
+@media(max-width:767px){
+
+    .car{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: auto;
+        width: 100vw;
+        height: auto;
+        box-shadow: 3px 3px 20px var(--Pale-blue);
+        border-radius: 40px;
+        
+    }
+    .car >:first-child{
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+    .display{
+        width: 130px;
+        height: 130px;
+    }
+}
+@media(min-width:767px){
+    .car{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        width: 50vw;
+        height: 75vh;
+        box-shadow: 3px 3px 20px var(--Pale-blue);
+        border-radius: 40px;
+    }
+    .container{
+        margin: 5% auto auto;
+    }
+
+    .car >:first-child{
+        border-radius: 40px;
+    }
+    .display{
+        width: 175px;
+        height: 175px;
+    }
+}
+
+
+.car >:first-child{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, var(--Light-slate-blue-background),var(--Light-royal-blue-background));
+    
+    align-items: center;
+    justify-content: space-evenly;
+    }
+.car >:first-child > h1{
+    color: var(--Light-lavender);
+    font-size: 30px;
+}
+.car >:first-child > .display{
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom, var(--Violet-blue-circle), var(--Persian-blue-circle) );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.car >:first-child > .display >:first-child{
+    font-size: 65px;
+    font-weight: bold;
+    height: 80px;
+    color: var(--White);
+}
+.car >:first-child > .display >:last-child{
+    font-size: 15px;
+    color: var(--Light-slate-blue-background);
+}
+.car >:first-child>span:nth-of-type(1){
+    color: var(--White);
+    font-weight: bold;
+    font-size: 30px;
+}
+.car> :first-child>p{
+    color: var(--Light-lavender);
+    text-align: center;
+    width: 63%;
+}
+
+section{
+    padding: 30px;
+}
+/* section two */
+.car >:last-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+/* table */
+/* .car > :last-child > h2{} */
+tr{
+    display: flex;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    justify-content: space-between;
+}
+tr img{
+    margin-right: 10px;
+}
+tr td:nth-of-type(2){
+    color: var(--Dark-gray-blue);
+}
+tr td:nth-of-type(2) span{
+    font-weight: bold;
+}
+tr:first-child{
+    color: var(--Light-red);
+    background-color: var(--Light-red-a);
+}
+tr:nth-child(2){
+    color: var(--Orangey-yellow);
+    background-color: var(--Orangey-yellow-a);
+}
+tr:nth-child(3){
+    color: var(--Green-teal);
+    background-color: var(--Green-teal-a);
+}
+tr:last-child{
+    color: var(--Cobalt-blue);
+    background-color: var(--Cobalt-blue-a);
+}
+table{
+    height: 50%;
+}
+button{
+    background-color: var(--Dark-gray-blue);
+    color: var(--White);
+    padding: 5px;
+    border: none;
+}
+button:hover{
+    background-image:linear-gradient(to bottom ,var(--Light-slate-blue-background), var(--Light-royal-blue-background))
+}
